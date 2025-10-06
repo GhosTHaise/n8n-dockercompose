@@ -139,6 +139,23 @@ N8N_RUNNERS_BROKER_PORT=5681
 
 ---
 
+## backup
+
+Backup your n8n data:
+
+```bash
+docker exec -t <postgres_container_name>  pg_dump -U <username> -d <database> > backup.sql
+```
+
+Restore your n8n data:
+
+```bash
+docker-compose exec n8n n8n restore
+```
+docker cp backup.sql <postgres_container_name>:/backup.sql
+docker exec -i <postgres_container_name> psql -U <username> -d <database> < /backup.sql
+---
+
 ## 📖 Documentation
 
 For more details, check the official [n8n documentation](https://docs.n8n.io/).
