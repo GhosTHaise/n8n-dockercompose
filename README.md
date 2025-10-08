@@ -164,6 +164,31 @@ docker-compose exec n8n n8n restore
 See the [n8n documentation](https://docs.n8n.io/) for more details.
 
 ---
+Using Brave Search MCP Server
+
+This example shows how to set up and use the Brave Search MCP server:
+
+    Install the Brave Search MCP server:
+
+    npm install -g @modelcontextprotocol/server-brave-search
+
+Configure MCP Client credentials:
+
+    Command: npx
+    Arguments: -y @modelcontextprotocol/server-brave-search
+    Environment Variables: BRAVE_API_KEY=your-api-key Add a variables (space comma or newline separated)
+
+Create a workflow that uses the MCP Client node:
+
+    Add an MCP Client node
+    Select the "List Tools" operation to see available search tools
+    Add another MCP Client node
+    Select the "Execute Tool" operation
+    Choose the "brave_search" tool
+    Set Parameters to: {"query": "latest AI news"}
+
+
+https://github.com/nerding-io/n8n-nodes-mcp
 
 ## 📝 License
 
