@@ -190,6 +190,6 @@ Create a workflow that uses the MCP Client node:
 
 https://github.com/nerding-io/n8n-nodes-mcp
 
-## 📝 License
+## 📝 Licenses
 
 MIT License.
