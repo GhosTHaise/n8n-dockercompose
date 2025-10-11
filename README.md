@@ -36,7 +36,7 @@ cp .env.example .env
 
 > **Security tip:** Never commit your `.env` file to a public repository.
 
-### 3. Start containers
+### 3. Start container
 
 ```bash
 docker-compose up -d
