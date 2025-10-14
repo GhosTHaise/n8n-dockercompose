@@ -1,4 +1,4 @@
-# n8n-dockercompose
+# n8n Dockercompose 
 
 Easily deploy [n8n](https://n8n.io/) using **Docker Compose** with production-ready support for Postgres, Redis, SSL, and SMTP.  
 Customize your setup via environment variables in the `.env` file.
