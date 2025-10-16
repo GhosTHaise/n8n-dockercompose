@@ -10,7 +10,7 @@ Customize your setup via environment variables in the `.env` file.
 - Self-hosted **n8n** automation platform.
 - **Postgres** as database backend.
 - **Redis** for queue mode.
-- Automatic SSL (Traefik or similar).
+- Automatic SSL (Traefik or similar ...).
 - **SMTP** for email notifications.
 - Flexible webhook and runner configuration.
 
